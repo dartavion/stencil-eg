@@ -1,0 +1,8 @@
+<!doctype html><html dir="ltr" lang="en"><head> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0"> <title>Stencil Component Starter</title> <link href="../node_modules/@fortawesome/fontawesome-free/css/all.css" rel="all"> <link href="../node_modules/@fortawesome/fontawesome-free/css/brands.css" rel="all"> <link href="../node_modules/@fortawesome/fontawesome-free/css/conflict-detection.css" rel="all"> <script type="module" src="/build/stanton.esm.js"></script> <script nomodule="" src="/build/stanton.js"></script> </head> <body> <stanton-dropdown-button> <button>Add</button> <button>Update</button> <button>Delete</button> </stanton-dropdown-button> <script>if ('serviceWorker' in navigator && location.protocol !== 'file:') {
+  // auto-unregister service worker during dev mode
+  navigator.serviceWorker.getRegistration().then(function(registration) {
+    if (registration) {
+      registration.unregister().then(function() { location.reload(true) });
+    }
+  });
+}</script></body></html>
